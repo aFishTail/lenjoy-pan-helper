@@ -1,0 +1,32 @@
+{
+  "name": "lenjoy-browser-helper",
+  "description": "夸克网盘增强工具 - 预览文件夹内所有文件",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "element-plus": "^2.13.0",
+    "pinia": "^3.0.4",
+    "sass": "^1.97.2",
+    "vue": "^3.5.25"
+  },
+  "devDependencies": {
+    "@wxt-dev/module-vue": "^1.0.3",
+    "typescript": "^5.9.3",
+    "unplugin-auto-import": "^20.3.0",
+    "unplugin-vue-components": "^30.0.0",
+    "vue-tsc": "^3.1.8",
+    "wxt": "^0.20.6"
+  }
+}

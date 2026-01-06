@@ -1,0 +1,35 @@
+// 颜色变量
+$primary-color: #0d53ff;
+$success-color: #67c23a;
+$warning-color: #e6a23c;
+$danger-color: #f56c6c;
+$info-color: #909399;
+
+// 文字颜色
+$text-primary: #303133;
+$text-regular: #606266;
+$text-secondary: #909399;
+$text-placeholder: #c0c4cc;
+
+// 边框颜色
+$border-color: #dcdfe6;
+$border-light: #e4e7ed;
+$border-lighter: #ebeef5;
+
+// 背景色
+$bg-color: #ffffff;
+$bg-page: #f5f7fa;
+$bg-hover: #f5f7fa;
+
+// 侧边栏
+$sidebar-width: 420px;
+$sidebar-bg: #ffffff;
+$sidebar-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+
+// 层级
+$z-sidebar: 10000;
+$z-mask: 9999;
+
+// 动画
+$transition-fast: 0.2s;
+$transition-normal: 0.3s;

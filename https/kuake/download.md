@@ -1,0 +1,25 @@
+# Download 接口
+
+## Request curl
+curl 'https://drive-pc.quark.cn/1/clouddrive/file/download?pr=ucpro&fr=pc&uc_param_str=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: zh-CN,zh;q=0.9' \
+  -H 'content-type: application/json;charset=UTF-8' \
+  -b '_UP_A4A_11_=wb9cd1bf4a124e0a9dacfbb7bf57bc26; __pus=b59a618c16c5a37727a8c035c999dbf8AARsL9mN5UzcCBQ2/L80uJnZaGqnvSNHz6SRtvSxzZOX6nZfU6v9EfDh3fgLrfUhdlb/2SbINnSB1z8NC7pDcsL1; __kp=d1f716a0-e485-11f0-9fd9-13d6457b404e; __kps=AARO5c4Lf0n1PR160Td0xCiW; __ktd=RaAnRTeN4i7ZCKrglwy9cw==; __uid=AARO5c4Lf0n1PR160Td0xCiW; __puus=e6bda6ed57676491ddf351f69892064dAAS3EXYagRYy+8SGl7JD8Q3AGRq8DTuLd+U37qMz+WIHjTyS0nTdnxoZ7Ilj07iYPQR8az8nOup4Z24THZuRVXj5/HBFfed66V/ozMl/LHTbKCkAbzU1pBO2nlp/5QB/pCa2pvQjPMBr41ARJMM67w1nYh98DW+4buHRuFhaFlH92WlmLFsrQrxWusJWk3TxKyuGIKzgj18xbdm6bvPtPv/a' \
+  -H 'origin: https://pan.quark.cn' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://pan.quark.cn/' \
+  -H 'sec-ch-ua: "Chromium";v="135", "Not-A.Brand";v="8"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \
+  --data-raw '{"fids":["5e21130fcf5048f3b35795d238c2368f"]}'
+
+## Response
+{"status":200,"code":0,"message":"","timestamp":1767683276,"data":[{"fid":"5e21130fcf5048f3b35795d238c2368f","file_name":"2024-12《黄仁勋：英伟达之芯》【豆瓣评分7.8】.epub","pdir_fid":"ddf10032ab6a4c4eb835695760ee20fc","category":4,"file_type":1,"obj_key":"977727f06e4b4c0baae5ba5dc477373a","size":1575168,"format_type":"application/epub+zip","status":1,"tags":"0","l_created_at":1736600962012,"l_updated_at":1736601023003,"source":"ucpro-android:saveas","file_source":"UCPRO-ANDROID:SAVE_SHARE","name_space":0,"l_shot_at":1736600962012,"download_url":"https://dl-pc-zb.pds.quark.cn/JDXkdYEJ/9420691790/67826f247460a6752f4f460eb25359d7ab885614/67826f24c0d3b151e35f46c5976973ae5034bad9?Expires=1767704876&OSSAccessKeyId=LTAI5tJJpWQEfrcKHnd1LqsZ&Signature=bO3d6ulwlDeq1hwZTSOYilpvpmY%3D&x-oss-traffic-limit=503316480&response-content-disposition=attachment%3B%20filename%3D2024-12%25E3%2580%258A%25E9%25BB%2584%25E4%25BB%2581%25E5%258B%258B%25EF%25BC%259A%25E8%258B%25B1%25E4%25BC%259F%25E8%25BE%25BE%25E4%25B9%258B%25E8%258A%25AF%25E3%2580%258B%25E3%2580%2590%25E8%25B1%2586%25E7%2593%25A3%25E8%25AF%2584%25E5%2588%25867.8%25E3%2580%2591.epub%3Bfilename%2A%3Dutf-8%27%272024-12%25E3%2580%258A%25E9%25BB%2584%25E4%25BB%2581%25E5%258B%258B%25EF%25BC%259A%25E8%258B%25B1%25E4%25BC%259F%25E8%25BE%25BE%25E4%25B9%258B%25E8%258A%25AF%25E3%2580%258B%25E3%2580%2590%25E8%25B1%2586%25E7%2593%25A3%25E8%25AF%2584%25E5%2588%25867.8%25E3%2580%2591.epub&callback-var=eyJ4OmF1IjoiMTc2NzcwNDg3Ni0xNTM4LTIxNjAwLWNkNjYiLCJ4Om9yayI6Iks1MTFWaTg2RTMyMVdrakwxOThVa2JpZnlNbHJYSWREcVZzcXFYTWNrIiwieDp1ZCI6IjE2LTItNC0yLTQtTi00LU4tMS0xNC0yLU4tTi1OLU4iLCJ4OnNwIjoiMTAwIiwieDp0b2tlbiI6IjQtYjk2MGY1MzZhMDEzNDFiMDM2N2Q3ZTgxOTA4YjhlNGQtMi0xLTIwNDgtOTc3NzI3ZjA2ZTRiNGMwYmFhZTViYTVkYzQ3NzM3M2EtMC0wLTAtMC0zYWU4OTYyNWNhMDc3OWJhNjI3MDg0NmMwYjUwODUyMiIsIng6dHRsIjoiMjE2MDAifQ%3D%3D&abt=2_0_&dfi=193&callback=eyJjYWxsYmFja0JvZHlUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsImNhbGxiYWNrU3RhZ2UiOiJiZWZvcmUtZXhlY3V0ZSIsImNhbGxiYWNrRmFpbHVyZUFjdGlvbiI6Imlnbm9yZSIsImNhbGxiYWNrVXJsIjoiaHR0cHM6Ly9kcml2ZS1hdXRoLnF1YXJrLmNuL291dGVyL29zcy9jaGVja3BsYXkiLCJjYWxsYmFja0JvZHkiOiJ7XCJob3N0XCI6JHtodHRwSGVhZGVyLmhvc3R9LFwic2l6ZVwiOiR7c2l6ZX0sXCJyYW5nZVwiOiR7aHR0cEhlYWRlci5yYW5nZX0sXCJyZWZlcmVyXCI6JHtodHRwSGVhZGVyLnJlZmVyZXJ9LFwiY29va2llXCI6JHtodHRwSGVhZGVyLmNvb2tpZX0sXCJtZXRob2RcIjoke2h0dHBIZWFkZXIubWV0aG9kfSxcInVscnBcIjoke2h0dHBIZWFkZXIueC11bHJwfSxcImlwXCI6JHtjbGllbnRJcH0sXCJwb3J0XCI6JHtjbGllbnRQb3J0fSxcIm9ya1wiOiR7eDpvcmt9LFwib2JqZWN0XCI6JHtvYmplY3R9LFwic3BcIjoke3g6c3B9LFwidWRcIjoke3g6dWR9LFwidG9rZW5cIjoke3g6dG9rZW59LFwiYXVcIjoke3g6YXV9LFwidHRsXCI6JHt4OnR0bH0sXCJkdF9zcFwiOiR7eDpkdF9zcH0sXCJoc3BcIjoke3g6aHNwfSxcImNsaWVudF90b2tlblwiOiR7cXVlcnlTdHJpbmcuY2xpZW50X3Rva2VufX0ifQ%3D%3D&ud=16-2-4-2-4-N-4-N-1-14-2-N-N-N-N","md5":"755f3138828e0dbaf1cbc8cd190a992b","source_display":"save_share","series_dir":false,"album_dir":false,"more_than_one_layer":false,"upload_camera_root_dir":false,"fps":0.0,"like":0,"operated_at":1766368357816,"risk_type":0,"tag_list":[],"range_size":20485760,"backup_sign":-1,"obj_category":"default","file_name_hl_start":0,"file_name_hl_end":0,"file_struct":{"fir_source":"saveas","sec_source":"share_save","thi_source":"share_save","platform_source":"android"},"duration":0,"last_play_info":{"time":0},"event_extra":{},"scrape_status":0,"update_view_at":1766368357816,"ban":false,"cur_version_or_default":0,"raw_name_space":0,"offline_source":false,"save_as_source":true,"ensure_valid_save_as_layer":1,"backup_source":false,"owner_drive_type_or_default":0,"dir":false,"file":true,"created_at":1766368357816,"updated_at":1766368357816,"_extra":{}}],"metadata":{"acc2":"OTU=","acc1":"OTA="}}
+
+## Download 链接 
+download_url 内容就是download链接，直接访问就可以
